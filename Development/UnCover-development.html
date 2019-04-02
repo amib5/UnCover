@@ -12,17 +12,95 @@
 
 
 <!--Navigation-->
-  <div>
-    <a href="./UnCover-About.html"> About </a>
-    <a href="./UnCover-Subscribe.html"> Subscribe </a>
-    <a href=".UnCover-Genre.html"> Genres </a>
-    <a href="./UnCover-Contact.html"> Contact </a>
-</head>
 <body>
+  <style>
+  nav {
+    width: 100%;
+    height:60px;
+    background-color: navy;
+    margin-top: 40px;
+  }
+  /* uncover heading settings in the nav bar*/
+  nav h1 {
+    font-family: Arial;
+    font-style: italic;
+    color: white;
+    font-size: 30px;
+    line-height: 10px;
+    float: left;
+    padding: 13px 100px;
+  }
+  /* menu items in the nav bar*/
+  nav ul {
+    float:left;
+    padding:10px 200px;
+  }
+  /* dropdown menu items under genre in the nav bar*/
+  nav ul li {
+    float: left;
+    list-style: none;
+    font-family: Arial
+    color: black
+    position: relative;
+    padding: 12px 10px;
+  }
+  nav ul li a {
+    display: block;
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    padding: 0px 5px;
+    text-decoration: none;
+  }
+  /*dropdown menu background */
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    background:navy;
+  }
+  /* command to display dropdown menu only when mouse on genre*/
+  nav ul li:hover ul {
+    display: block;
+  }
+  /* size of the dropdown menu*/
+  nav ul li ul li  {
+    width: 200px;
+    height: 20px;
+    border-radius: 2px;
+  }
+  nav ul li ul li a {
+    padding: 0px 2px;
+  }
+  /* command to highlight dropdown menu item when hovered over*/
+  nav ul li ul li a:hover {
+    background-color: grey;
+    padding: 3px;
+  }
+  </style>
 
+  <nav>
+  <h1>Uncover</h1>
+  <ul>
+    <li><a href="./Uncover-Home.html">Home</a><li>
+    <li><a href="./Uncover-About.html">About</a><li>
+    <li><a href="./Uncover-Subscribe.html">Subscribe</a><li>
+    <li><a href="./Uncover-Genre.html">Genres</a>
+        <ul>
+          <li><a href="Action/Uncover-Action">Action</a></li>
+          <li><a href="Development/Uncover-Development">Development</a></li>
+          <li><a href="Poetry/Uncover-Poetry">Poetry</a></li>
+          <li><a href="Self-Help/Uncover-Self-Help">Self-Help</a></li>
+        </ul>
+      <li>
+    <li><a href="./Uncover-Contact.html">Contact</a><li>
+  </ul>
+</nav>
+<br>
 
 <!--Grid-->
-<div class="container-fluid">
+<body>
+  <div class="container-fluid">
   <h1>Development Studies</h1>
   <h2>For those interested in the environment, poverty, gender and economics!</h2>
 
