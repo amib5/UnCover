@@ -57,11 +57,19 @@ nav ul li ul li a {
 nav ul li ul li a:hover {
   background-color: grey;
 }
+h1{
+  font-family: Arial;
+  font-size: 30px;
+  text-align: left;
+  color: black;
+  padding-top: 30px;
+  padding-left: 30px;
+}
 h2 {
   font-family: Arial;
   font-size: 30px;
   text-align: left;
-  color: white;
+  color: black;
   padding-top: 30px;
   padding-left: 30px;
 }
@@ -75,6 +83,8 @@ p {
 form {
   font-family: Arial;
   font-size: 20px;
+  padding-left: 30px;
+  padding top: 30px;
 }
 ol {
   font-family: Arial;
@@ -82,4 +92,16 @@ ol {
   color: black;
   padding-top: 20px;
   padding-left: 65px;
+}
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input  {
+  width: 80%
+  padding:12px 20px
+  margin: 8px 0;
+  box-sizing: content-box;
 }
