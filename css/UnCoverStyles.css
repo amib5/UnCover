@@ -86,13 +86,13 @@ h2 {
   text-align: left;
   color: black;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 100px;
 }
 p {
   font-family: Arial;
   font-size: 20px;
   color: black;
-  padding-left: 60px;
+  padding-left: 100px;
   padding-top: 30px;
 }
 /* Settings for forms*/
@@ -102,16 +102,17 @@ form {
   padding-left: 300px;
   padding top: 30px;
 }
-/* settings for */
+/* settings for list in the */
 ol {
   font-family: Arial;
   font-size: 20px;
   color: black;
   padding-top: 20px;
-  padding-left: 65px;
+  padding-left: 120px;
 }
+/*form attributes*/
 input {
-  width: 70%;
+  width: 60%;
   padding: 12px 20px;
   margin: 8px 20;
   box-sizing: border-box;
@@ -122,4 +123,11 @@ input a
   padding:12px 20px
   margin: 8px 0;
   box-sizing: content-box;
+}
+h3 {
+  font-family: Arial;
+  font-size: 20px;
+  text-align: left;
+  color: black;
+  padding-left: 485px
 }
