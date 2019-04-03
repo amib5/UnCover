@@ -2,35 +2,139 @@
 <html lang="en">
 <head>
   <title>Self Help</title>
+
+<!--Essential Bootstrap to facilitate the grid and responsiveness-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <div>
-    <a href="./UnCover-About.html"> About </a>
-    <a href="./UnCover-Subscribe.html"> Subscribe </a>
-    <a href=".UnCover-Genre.html"> Genres </a>
-    <a href="./UnCover-Contact.html"> Contact </a>
-</head>
-<body>
 
-<div class="container-fluid">
+<!--Navigation-->
+<body>
+  <style>
+  nav {
+    width: 100%;
+    height:60px;
+    background-color: navy;
+    margin-top: 40px;
+  }
+  /* uncover heading settings in the nav bar*/
+  nav h1 {
+    font-family: Arial;
+    font-style: italic;
+    color: white;
+    font-size: 30px;
+    line-height: 10px;
+    float: left;
+    padding: 13px 100px;
+  }
+  /* menu items in the nav bar*/
+  nav ul {
+    float:left;
+    padding:10px 200px;
+  }
+  /* dropdown menu items under genre in the nav bar*/
+  nav ul li {
+    float: left;
+    list-style: none;
+    font-family: Arial
+    color: black
+    position: relative;
+    padding: 12px 10px;
+  }
+  nav ul li a {
+    display: block;
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    padding: 0px 5px;
+    text-decoration: none;
+  }
+  /*dropdown menu background */
+  nav ul li ul {
+    display: none;
+    position: absolute;
+    padding: 0px;
+    background:navy;
+  }
+  /* command to display dropdown menu only when mouse on genre*/
+  nav ul li:hover ul {
+    display: block;
+  }
+  /* size of the dropdown menu*/
+  nav ul li ul li  {
+    width: 200px;
+    height: 20px;
+    border-radius: 2px;
+  }
+  nav ul li ul li a {
+    padding: 0px 2px;
+  }
+  /* command to highlight dropdown menu item when hovered over*/
+  nav ul li ul li a:hover {
+    background-color: grey;
+    padding: 3px;
+  }
+  </style>
+
+  <nav>
+  <h1>Uncover</h1>
+  <ul>
+    <li><a href="./Uncover-Home.html">Home</a><li>
+    <li><a href="./Uncover-About.html">About</a><li>
+    <li><a href="./Uncover-Subscribe.html">Subscribe</a><li>
+    <li><a href="./Uncover-Genre.html">Genres</a>
+        <ul>
+          <li><a href="Action/Uncover-Action">Action</a></li>
+          <li><a href="Development/Uncover-Development">Development</a></li>
+          <li><a href="Poetry/Uncover-Poetry">Poetry</a></li>
+          <li><a href="Self-Help/Uncover-Self-Help">Self-Help</a></li>
+        </ul>
+      <li>
+    <li><a href="./Uncover-Contact.html">Contact</a><li>
+  </ul>
+</nav>
+<br>
+<!--Grid-->
+<body>
+  <div class="container-fluid">
   <h1> Self Help </h1>
-  <h2>For those interested in improving aspects of their lives</h2>
+  <h2>For those looking for reflection methods</h2>
 
   <div class="row">
     <div class="col-sm-6" style="background-color:white;"><h3>Book 1</h3>
     <img src="Self-Help/Self-Help-Book-1" alt="Book 1" width="200px">
-    <br>
-    <br>
-    <video src="Self Help/Slum flower.m4a" width="100px" height="100px" controls>
     </div>
 
     <div class="col-sm-6" style="background-color:white;"> <h3>Book 2</h3>
     <img src="Self-Help/Self-Help-Book-2.png" alt="Book 2" width="250px">
   </div>
 </div>
+
+
+<!--Help section-->
+  <br>
+  <br>
+  <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mx-auto text-left">
+            <h2 class="section-heading">Help</h2>
+            <hr class="my-4">
+            <p class="mb-5">Any questions - drop us a line!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mr-auto text-left">
+            <i class="fas fa-envelope"></i>
+            <p>
+              <a href="mailto:a.banerjee@ids.ac.uk" target="_blank">a.banerjee@ids.ac.uk</a>
+              <br>
+              <a href="mailto:n.mabuza@ids.ac.uk" target="_blank">n.mabuza@ids.ac.uk</a>
+            </p>
+          </div>
+    </section>
 
 </body>
 </html>
