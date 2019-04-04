@@ -58,7 +58,7 @@ nav ul li:hover ul {
 }
 /* size of the dropdown menu*/
 nav ul li ul li  {
-  width: 200px;
+  width: 220px;
   height: 20px;
   border-radius: 2px;
 }
@@ -70,13 +70,14 @@ nav ul li ul li a:hover {
   background-color: grey;
   padding: 3px;
 }
-/* Page Heading settings*/
+/* Page Heading - (UnCover) settings*/
 h1{
   font-family: Arial;
   font-size: 30px;
   text-align: center;
   color: black;
-  padding-top: 30px;
+  margin-top: 15px;
+  padding-top: 40px;
   padding-left: 0px;
 }
 
@@ -113,14 +114,15 @@ ol {
 /*form attributes*/
 input {
   width: 60%;
-  padding: 12px 20px;
-  margin: 8px 20;
+  height:12px;
+  padding: 20px 10px;
+  margin: 8px 0px;
   box-sizing: border-box;
 }
 input a
  {
-  width: 80%
-  padding:12px 20px
+  width: 80%;
+  padding:12px 20px;
   margin: 8px 0;
   box-sizing: content-box;
 }
